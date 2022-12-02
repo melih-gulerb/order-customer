@@ -8,14 +8,12 @@ type Config struct {
 
 var cfg *Config
 
-func SetConfig() {
+func SetConfig() *Config {
 	cfg = &Config{
 		MongoConnection:    "mongodb+srv://gg-username:gg.@cluster0.w0wd4jk.mongodb.net/test",
 		DBName:             "nexus",
 		CustomerCollection: "customer",
 	}
-}
 
-func GetConfig() *Config {
 	return cfg
 }
